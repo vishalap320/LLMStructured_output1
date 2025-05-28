@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")  
-os.environ["GROQ_API_KEY"] = ""
+os.environ["GROQ_API_KEY"] = "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"
 
 
 class Person(BaseModel):

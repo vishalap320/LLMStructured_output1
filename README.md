@@ -56,6 +56,15 @@ Re-run the script.
 
 Compare the printed output to check if the fields (name, age, address) are correctly parsed.
 
+## How It Works
+Loads your Groq API key securely via python-dotenv.
+
+Classifies the input text into "personal", "TextSummary", or "other" categories.
+
+According to classification, uses Pydantic models to parse and validate structured output.
+
+Prints the parsed output as a Python object.
+
 ## What Can This Code Do?
 Parse structured entities (name, age, address) from any descriptive sentence.
 

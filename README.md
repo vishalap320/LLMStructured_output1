@@ -14,10 +14,9 @@ The model returns:
 
 ```python
 Person(name='John Doe', age=30, address='123 Main St, Springfield')
-
+```
 This is achieved by using a Groq-hosted LLM (LLaMA3) and parsing its output into a Pydantic model.
 
-```
 ## Usage
 This script is useful when:
 

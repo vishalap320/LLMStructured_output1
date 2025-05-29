@@ -46,6 +46,29 @@ You can replace the input text in this line:
 input_text = "John Doe is 30 years old and lives at 123 Main St, Springfield."
 ```
 Make sure to store your Groq API key securely in a .env file. 
+
+## Setting Up the Environment
+Clone the repository
+```python
+git clone https://github.com/vishal320/LLMStructured_output1.git
+cd LLMStructured_output1
+```
+Install dependencies
+```python
+pip install langchain langchain-groq pydantic python-dotenv
+```
+Add your Groq API key
+Create a .env file in the project root with the following content:
+```python
+GROQ_API_KEY=your_actual_groq_api_key_here
+```
+Make sure to replace your_actual_groq_api_key_here with your real Groq API key.
+
+Run the script
+```python
+python your_script_name.py
+```
+
 ## Testing
 To test different sentences:
 

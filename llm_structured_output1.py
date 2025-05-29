@@ -19,8 +19,8 @@ class PersonalInfo(BaseModel):
     age: str = Field(description="Age of the person")
     address: str = Field(description="Full address of the person")
 
-# Educational Summary Schema
-class EducationTechSummary(BaseModel):
+
+class TextSummary(BaseModel):
     main_idea: str = Field(description="The core message or thesis of the input text")
     benefits: list[str] = Field(description="Advantages mentioned in the text")
     challenges: list[str] = Field(description="Challenges or issues highlighted")
@@ -34,7 +34,7 @@ chat_model = ChatGroq(model="llama3-70b-8192", temperature=0)
 # Function to classify input type
 def classify_input(input_text: str) -> str:
     classify_prompt = PromptTemplate.from_template(
-        "Classify the input text into one of the categories: 'personal', 'educational', or 'other'.\n\n"
+        "Classify the input text into one of the categories: 'personal', 'TextSummary', or 'other'.\n\n"
         "Text:\n"
         "{input_text}\n\n"
         "Return only the category."

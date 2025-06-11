@@ -28,6 +28,12 @@ You are building an NLP pipeline that involves automated information extraction.
 
 ## How to Run This Code
 1. Install dependencies:
+   Make sure Python 3.10+ is installed on your system.
+You can check by running:
+```python
+python --version
+```
+If not installed, download it from: https://www.python.org/downloads/
  ```python
 pip install langchain langchain-groq pydantic python-dotenv
 ```

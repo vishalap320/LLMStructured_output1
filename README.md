@@ -34,9 +34,12 @@ You can check by running:
 python --version
 ```
 If not installed, download it from: https://www.python.org/downloads/
- ```python
+
+You ahve to import packages like os, dotenv, and pydantic → it's called importing libraries.
+```python
 pip install langchain langchain-groq pydantic python-dotenv
 ```
+ 
 2. Create a .env file:
 ```python
 GROQ_API_KEY=your_actual_groq_key_here
@@ -45,6 +48,7 @@ GROQ_API_KEY=your_actual_groq_key_here
 ```pyhton
 python your_script_name.py
 ```
+
 Run the Examples
 
 You can replace the input text in this line:
